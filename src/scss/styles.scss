@@ -1,17 +1,17 @@
 @font-face {
     font-family: Geomanist;
-    src: url(../src/assets/fonts/geomanist-regular-webfont.eot);
-    src: url(../src/assets/fonts/geomanist-regular-webfont.woff2) format('woff2'),
-       url(../src/assets/fonts/geomanist-regular-webfont.woff) format('woff'),
-       url(../src/assets/fonts/geomanist-regular-webfont.ttf)  format('truetype'),
-       url(../src/assets/fonts/geomanist-regular-webfont.svg#svgGeomanist) format('svg');
+    src: url(../assets/fonts/geomanist-regular-webfont.eot);
+    src: url(../assets/fonts/geomanist-regular-webfont.woff2) format('woff2'),
+       url(../assets/fonts/geomanist-regular-webfont.woff) format('woff'),
+       url(../assets/fonts/geomanist-regular-webfont.ttf)  format('truetype'),
+       url(../assets/fonts/geomanist-regular-webfont.svg#svgGeomanist) format('svg');
 }
 * { 
     box-sizing: border-box;
     font-family: 'Geomanist', Arial, san-serif;
 }
 body {
-    background: url(../src/assets/images/background.jpg) no-repeat center center fixed;
+    background: url(../assets/images/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -39,124 +39,5 @@ h1 {
     border-radius: 10px 10px 0px 0px;
     padding: 15px;
 }
-.refresh {
-    border: 2px solid white;
-    border-radius: 50%;
-    padding: 5px;
-    width: 40px;
-    vertical-align: middle;
-    transition: all 0.05s ease-in;
-    cursor: pointer;
-}
-.refresh:hover {
-    background: rgba(255, 255, 255, 0.3);
-}
-
-/***Checkbox***/
-.check-container {
-    display: inline-block;
-    vertical-align: middle;
-}
-.check-item {
-    text-transform: uppercase;
-    display: inline-block;
-    position: relative;
-    padding-left: 35px;
-    margin-left: 25px;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.check-item input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-.checkmark {
-    position: absolute;
-    top: -2px;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    border: 1px solid white;
-    border-radius: 3px;
-    transition: all 0.05s ease-in;
-}
-.checkmark:hover {
-    background: rgba(255, 255, 255, 0.5);
-}
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-.check-item input:checked ~ .checkmark:after {
-    display: block;
-}
-.check-item .checkmark:after {
-    content: url(../src/assets/images/checkmark.svg);
-    left: 5px;
-    top: 1px;
-    width: 5px;
-    height: 8px;
-}
 
 
-/***Table***/
-.table-row {
-    display: flex;           
-    display: -webkit-flex;
-    flex-direction: row;     
-    -webkit-flex-direction: row;
-    flex-grow: 0;            
-    -webkit-flex-grow: 0;
-    flex-wrap: wrap;         
-    -webkit-flex-wrap: wrap;
-    padding: 10px;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.85);
-    border: 1px solid white;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    color: #444444;
-    align-items: center;
-    justify-content: center;
-}
-    .table-row.header {
-        background: rgb(157,183,205);
-        background: -moz-linear-gradient(top, rgba(157,183,205,1) 0%, rgba(255,255,255,1) 100%);
-        background: -webkit-linear-gradient(top, rgba(157,183,205,1) 0%,rgba(255,255,255,1) 100%);
-        background: linear-gradient(to bottom, rgba(157,183,205,1) 0%,rgba(255,255,255,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9db7cd', endColorstr='#ffffff',GradientType=0 );
-        border-radius: 0;
-        color: #043d67;
-        border-top: 1px solid #121a35;
-    }
-
-.large {
-    flex-grow: 1;            
-    -webkit-flex-grow: 1;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    width: 150px;
-    margin-right: 20px;
-}
-.med {
-    width: 130px;
-}
-.small {
-    width: 70px;
-}
-.table-img {
-    max-width: 50px;
-    padding: 10px;
-}
-.table-img.article {
-    padding: 15px;
-    cursor: pointer;
-}

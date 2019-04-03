@@ -5,77 +5,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>R&amp;P Frontend Assessment</title>
-  <link rel="stylesheet" href="../src/scss/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
+    
     <div id="root"></div>
-                
-    <header>
-        <h1>SpaceX Launches</h1>
-    </header>
-
-    <section class="main-content">
-        <div class="panel nav">
-
-            <img class="refresh" src="../src/assets/images/refresh.svg" alt="refresh"/>
-
-            <div class="check-container">
-                <label class="check-item">
-                  <input type="checkbox" checked="checked">Land Success
-                  <span class="checkmark"></span>
-                </label>
-
-                <label class="check-item">
-                  <input type="checkbox" >Reused
-                  <span class="checkmark"></span>
-                </label>
-
-                <label class="check-item">
-                  <input type="checkbox" >With Reddit
-                  <span class="checkmark"></span>
-                </label>
-            </div>
-
-        </div>
-
-        <div class="panel">
-
-            <div class="table-row" id="table-row-header">
-                <div class="small">Badge</div>
-                <div class="med">Rocket Name</div>
-                <div class="med">Rocket Type</div>
-                <div class="med">Launch Date</div>
-                <div class="large">Details</div>
-                <div class="small">ID</div>
-                <div class="small">Article</div>
-            </div>
-
-            <div class="table-row" id="spacex-row">
-                <div class="small"><img class="table-img badge" src="../src/assets/images/badge.png" alt="Badge One" /></div>
-                <div class="med">Falcon 1</div>
-                <div class="med">Merlin A</div>
-                <div class="med">03/25/2005</div>
-                <div class="large">Engine failure at 33 seconds and loss of vehicle</div>
-                <div class="small">1</div>
-                <div class="small"><img class="table-img article" src="../src/assets/images/link.svg" alt="Article Link" /></div>
-            </div>
-            
-
-        </div>
-
-    </section>
+  
     
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
     
     <!--When deploying, use minified production links below instead of dev links above
     <script src="https://unpkg.com/react@16/umd/react.production.min.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js" crossorigin></script>-->
     
  <!-- React components-->
-    <script type="text/babel" src="../src/api_info.js"></script>
     <script type="text/babel" src="../src/index.js"></script>
 </body>
 
