@@ -21,7 +21,7 @@ class Reused extends React.Component {
     render () {
       return (
         <label className="switch">
-          <input type="checkbox" value={this.state.isChecked} onChange={this.handleChange} checked = {this.state.isChecked} /> Reused
+          <input className="regularCheckbox" type="checkbox" value={this.state.isChecked} onChange={this.handleChange} checked = {this.state.isChecked} /> Reused
         </label>
       );
     }

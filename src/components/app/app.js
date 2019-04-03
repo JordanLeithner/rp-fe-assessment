@@ -65,6 +65,18 @@ class App extends Component {
 				</div>
 
 				<div className="panel">
+					<div class="tableRow tableHeader">
+						<div class="small">Badge</div>
+						<div class="med">Rocket Name</div>
+						<div class="med">Rocket Type</div>
+						<div class="med">Launch Date</div>
+						<div class="large">Details</div>
+						<div class="small">ID</div>
+						<div class="small">Article</div>
+					</div>
+				</div>
+
+				<div className="panel">
 					{this.state.launches.map(launchEntry => {
 						return <LaunchEntry entry = {launchEntry} filter = {this.state.filter} />  //pulls in LaunchEntry.js
 					} )}

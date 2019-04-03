@@ -20,8 +20,7 @@
 .hiddenRow {
     display: none !important;
 }
-
-.tableRow.header {
+.tableRow.tableHeader {
     background: rgb(157,183,205);
     background: -moz-linear-gradient(top, rgba(157,183,205,1) 0%, rgba(255,255,255,1) 100%);
     background: -webkit-linear-gradient(top, rgba(157,183,205,1) 0%,rgba(255,255,255,1) 100%);
@@ -30,28 +29,28 @@
     border-radius: 0;
     color: #043d67;
     border-top: 1px solid #121a35;
+    font-weight: bold;
 }
-
 .large {
-flex-grow: 1;            
--webkit-flex-grow: 1;
-overflow: hidden;
-white-space: nowrap;
-text-overflow: ellipsis;
-width: 150px;
-margin-right: 20px;
+    flex-grow: 1;            
+    -webkit-flex-grow: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: 150px;
+    margin-right: 20px;
 }
 .med {
-width: 130px;
+    width: 130px;
 }
 .small {
-width: 70px;
+    width: 70px;
 }
 .tableImg {
-max-width: 50px;
-padding: 10px;
+    max-width: 50px;
+    padding: 10px;
 }
 .tableImg.article {
-padding: 15px;
-cursor: pointer;
+    padding: 15px;
+    cursor: pointer;
 }

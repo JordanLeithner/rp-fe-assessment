@@ -34,7 +34,7 @@ class LaunchEntry extends React.Component {  //creating new component called Lau
             <span className="med">{this.props.entry.launch_date_utc}</span>
             <span className="large">{this.props.entry.details}</span>
             <span className="small">{this.props.entry.flight_number}</span>
-            <span className="small"><a href={this.props.entry.links.article_link}><img className="tableImg article" src={articleImage} alt="Article Link" /></a></span>
+            <span className="small"><a target="_blank" href={this.props.entry.links.article_link}><img className="tableImg article" src={articleImage} alt="Article Link" /></a></span>
         </div>;
     };
 }

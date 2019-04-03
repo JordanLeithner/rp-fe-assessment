@@ -19,21 +19,24 @@ class HeaderNav extends React.Component {  //creating new component called Heade
 
     render() {
         console.log('headerNav', this.props);
+
         return <div className="checkContainer">
-            <div onClick={this.handleRefresh}>
+            <div onClick={this.handleRefresh} className="refreshFunction">
                 <img className="refresh" src={refreshImg} alt={"refresh"} />;
             </div>
-            <span className="headerItem"> 
-                <LandSuccess isChecked = {this.props.filter.success} notifyChange = {(isChecked) => this.filterChange('success', isChecked)} />
-            </span>
-        
-            <span className="headerItem">
-                <Reused isChecked = {this.props.filter.reused} notifyChange = {(isChecked) => this.filterChange('reused', isChecked)} />
-            </span>
-        
-            <span className="headerItem">
-                <WithReddit isChecked = {this.props.filter.reddit} notifyChange = {(isChecked) => this.filterChange('reddit', isChecked)} />
-            </span>
+            <div className="filterItemsContainer">
+                <span className="headerItem"> 
+                    <LandSuccess isChecked = {this.props.filter.success} notifyChange = {(isChecked) => this.filterChange('success', isChecked)} />
+                </span>
+            
+                <span className="headerItem">
+                    <Reused isChecked = {this.props.filter.reused} notifyChange = {(isChecked) => this.filterChange('reused', isChecked)} />
+                </span>
+            
+                <span className="headerItem">
+                    <WithReddit isChecked = {this.props.filter.reddit} notifyChange = {(isChecked) => this.filterChange('reddit', isChecked)} />
+                </span>
+            </div>
         </div>;
     };
 }
